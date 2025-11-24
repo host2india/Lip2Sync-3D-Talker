@@ -23,7 +23,8 @@ It is **faster, cleaner, and more stable** than the original SadTalker repositor
 
 ## 🏗 System Architecture
 
-![Lip2Sync 3D Architecture](talker_engine_architecture.png)
+Lip2Sync 3D Architecture <img width="1024" height="1536" alt="ChatGPT Image Nov 24, 2025, 11_24_36 PM" src="https://github.com/user-attachments/assets/06a8c66f-1efc-4b1b-bb39-a393023cbf42" />
+
 
 ---
 
@@ -56,8 +57,6 @@ Lip2Sync-3D-Talker/
 ├── uploads/
 └── README.md
 
-yaml
-Copy code
 
 ---
 
@@ -65,8 +64,6 @@ Copy code
 **All required files must be placed here:**  
 models/sadtalker/checkpoints/
 
-yaml
-Copy code
 
 ---
 
@@ -140,8 +137,6 @@ Place inside:
 
 models/wav2lip/checkpoints/
 
-yaml
-Copy code
 
 | File | Link |
 |------|------|
