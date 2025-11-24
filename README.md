@@ -119,7 +119,7 @@ app/engines/sadtalker/output/
 !git clone https://github.com/host2india/Lip2Sync-3D-Talker.git
 %cd Lip2Sync-3D-Talker
 
-# Auto installer script (Captain will generate next)
+# Auto installer script 
 
 
 Captain will generate the Colab Auto Setup Script after this README.
