@@ -1,0 +1,18 @@
+checkpoints:
+  sadtalker: "models/sadtalker/checkpoints/sadtalker.pth"
+  mapping: "models/sadtalker/checkpoints/mapping_00109.pth"
+  gft: "models/sadtalker/checkpoints/gft.pth"
+
+options:
+  fps: 25
+  enhance: false
+  device: cuda
+  temp_dir: "/tmp/sadtalker"
+  output_dir: "app/engines/sadtalker/output"
+  verbose: true
+
+inference:
+  batch_size: 1
+  face_crop_size: 256
+  pad: 10
+  resize_factor: 1.0

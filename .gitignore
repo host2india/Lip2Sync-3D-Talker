@@ -1,4 +1,12 @@
-
-!models/*/README.md
-uploads/*
-models_backup/
+__pycache__/
+*.pyc
+*.mp4
+*.pth
+*.tar
+*.mat
+*.dat
+*.bin
+models/sadtalker/checkpoints/
+models/sadtalker_src/
+*.zip
+.venv*
