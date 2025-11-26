@@ -1,2 +1,17 @@
 fastapi
 uvicorn
+python-multipart
+pydantic
+numpy==1.23.5
+torch
+torchvision
+torchaudio
+scipy
+opencv-python
+librosa
+numba
+gdown
+imageio
+imageio-ffmpeg
+tqdm
+face-alignment
