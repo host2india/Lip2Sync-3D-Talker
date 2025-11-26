@@ -1,33 +1,20 @@
 #!/bin/bash
 set -e
 
-echo "=============================="
-echo "🚀 STARTING LIP2SYNC SERVER..."
-echo "=============================="
+apt update && apt install -y \
+    git \
+    ffmpeg \
+    libsm6 \
+    libxext6 \
+    cmake \
+    build-essential \
+    libgl1-mesa-glx
 
-# Activate workspace
-cd /workspace/Lip2Sync-3D-Talker || cd /workspace/app || true
+cd /workspace/app
 
-echo "📦 Installing Python dependencies..."
 pip install --upgrade pip
-pip install --no-cache-dir -r requirements.txt
+pip install -r requirements.txt
 
-echo "🎯 Ensuring model directory exists..."
-mkdir -p models/sadtalker
-mkdir -p models/wav2lip/checkpoints
+bash download_models.sh
 
-echo "⬇️ Downloading missing models..."
-chmod +x download_models.sh
-./download_models.sh
-
-echo "🔧 Applying performance patches..."
-export PYTHONUNBUFFERED=1
-export CUDA_VISIBLE_DEVICES=0
-
-echo "🚀 Launching FastAPI server..."
-uvicorn api:app \
-    --host 0.0.0.0 \
-    --port ${APP_PORT:-8000} \
-    --workers 1 \
-    --timeout-keep-alive 120 \
-    --no-access-log
+uvicorn api:app --host 0.0.0.0 --port 8000
