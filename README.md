@@ -114,9 +114,6 @@ Extract **inside**:
 
 models/sadtalker/checkpoints/BFM_Fitting/
 
-yaml
-Copy code
-
 Must contain:
 
 - 01_MorphableModel.mat  
